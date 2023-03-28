@@ -1,0 +1,236 @@
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&amp;display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Internal CSS -->
+    <style>
+        /* General styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: 'Roboto Mono', monospace;
+            background: linear-gradient(45deg, rgba(0, 0, 0, 1) 0%, rgba(34, 34, 34, 1) 100%);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            color: #fff;
+            position: relative;
+        }
+
+        /* Heading styles */
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        /* Paragraph styles */
+        p {
+            margin-bottom: 20px;
+        }
+
+        /* Container styles */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        /* Option styles */
+        .option {
+          min-width: 30px;
+          padding: 30px;
+          border-radius: 15px;
+          background-color: rgba(0, 0, 0, 0.8);
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+          cursor: pointer;
+          transition: all 0.3s ease;
+          position: center;
+          overflow: hidden;
+          text-align: center;
+          height: 100px;
+        }
+
+        .option:hover {
+          background-color: rgba(0, 0, 0, 0.8);
+          min-width: 30px;
+          height: 180px;
+          text-align: center;
+        }
+
+        /* Option title styles */
+        .option h2 {
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: -10px;
+            color: #ff9800;
+        }
+
+        /* Option list styles */
+        .option ul {
+          opacity: 0;
+          transform: translateY(20px);
+          transition: all 0.5s ease;
+          position: center;
+          top: 50px;
+          left: 0;
+          right: 0;
+          list-style-type: none;
+        }
+
+        .option:hover ul li::before {
+          content: "•";
+          color: #ff9800;
+          font-size: 20px;
+          margin-right: 10px;
+        }        
+    
+        .option ul li {
+          padding-left: 0;
+          margin-bottom: 5px;
+        }
+
+        .option:hover ul {
+          opacity: 1;
+        }
+
+        /* Link styles */
+        a {
+            color: #fff;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 16px;
+        }
+
+        a:hover {
+            color: #00ff00;
+        }
+
+        /* Social Icons styles */
+        .social-icons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #00ff00;
+        }
+
+        /* Contact form styles */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            color: #fff;
+            background-color: transparent;
+            outline: none;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: #ff9800;
+            color: #000;
+            cursor: pointer;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background-color: #00ff00;
+            color: #000;
+        }
+
+        .contact-form label {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+    </style>
+    
+    <!-- Page title -->
+    <title>Home Page</title>
+</head>
+
+<body>
+    <h1>mandalinan</h1>
+    <p>Providing solutions about ML | AI | Data</p>
+    
+    <!-- Options container -->
+    <div class="container">
+        <div class="option">
+            <h2>Ebay</h2>
+            <ul>
+                <li><a href="listing-data.html">Listing Data</a></li>
+                <li><a href="data-retrieving.html">Data Retrieving</a></li>
+            </ul>
+        </div>
+
+        <div class="option">
+            <h2>AI</h2>
+            <ul>
+                <li><a href="theone">The One</a></li>
+                <li><a href="variation-analysis.html">Picture Analysis</a></li>
+            </ul>
+        </div>
+
+        <div class="option">
+            <h2>Amazon</h2>
+            <ul>
+                <li><a href="the-one.html">Listing Analysis</a></li>
+                <li><a href="picture-analysis.html">Variation Analysis</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Social icons -->
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+    
+    <!-- Contact form -->
+    <div class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your Name">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Your Email">
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" placeholder="Your Message"></textarea>
+        <input type="submit" value="Send Message">
+    </div>
+
+
+</body>
+</html>
