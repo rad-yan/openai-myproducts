@@ -5,13 +5,12 @@ import os
 
 # packages -- pip install flask flask-cors 
 # -- pip install openai==0.27.0
-# export OPENAI_API_KEY="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"
+# export OPENAI_API_KEY="sk-apikey1234"
 
 
 
 
 openai.api_key = os.getenv("OPENAI_API_KEY")# we will use it once it is deployed 
-openai.api_key = "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"
 
 app = Flask(__name__)
 CORS(app) # Enable CORS
